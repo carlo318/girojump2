@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8" />
+    <title>Giro Jump2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Giro Jump 2!</h1>
+    <h4 style="margin: 0 20px 0 0;">
+      Go to <span style="background-color: orange;">ORANGE</span> cells, 
+      but avoid <span style="background-color: red;">RED</span> cells. 
+      Start from any cell.
+    </h4>
+    <div style="display: table">
+      <div style="display: table-row; text-align: center;">
+        <div style="display: table-cell;width: 50%;"><button id="jumpKnight">Knight</button></div>
+        <div style="display: table-cell;width: 50%;"><button id="jump100">100!</button></div>
+      </div>  
+    </div>
+    
+
+    <div id="game">
+      <table border="0" class="schema" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td align="center">
+              <div id="c0" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c1" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c2" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c3" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c4" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c5" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c6" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c7" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c8" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c9" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c10" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c11" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c12" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c13" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c14" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c15" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c16" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c17" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c18" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c19" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c20" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c21" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c22" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c23" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c24" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c25" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c26" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c27" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c28" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c29" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c30" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c31" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c32" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c33" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c34" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c35" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c36" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c37" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c38" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c39" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c40" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c41" class="box">  </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <div id="c42" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c43" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c44" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c45" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c46" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c47" class="box">  </div>
+            </td>
+            <td align="center">
+              <div id="c48" class="box">  </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin: 0 auto;">Cells covered: <span id="cellCount">0</span></h3>
+
+
+    <div style="display: none;">
+      <h3>Last message from Devvit blocks:</h3>
+      <pre id="messageOutput"></pre>  
+    </div>
+
+    <script type="application/javascript" src="jquery-3.7.1.min.js"></script>    
+    <script type="application/javascript" src="script.js"></script>
+  </body>
+</html>
+
