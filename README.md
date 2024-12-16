@@ -1,4 +1,4 @@
-# girojump2
+# Giro Jump 2
 
 
 Giro JUMP 2
